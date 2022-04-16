@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+button {
+  font-family: "Lexend Deca", sans-serif;
+}
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.btn {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+.cyan {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+}
+.dark-cyan {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+.orange .btn {
+  color: hsl(31, 77%, 52%);
+}
+.cyan .btn {
+  color: hsl(184, 100%, 22%);
+}
+.dark-cyan .btn {
+  color: hsl(179, 100%, 13%);
+}
+.btn:hover {
+  background-color: transparent;
+  color: white;
+}
+.container {
+  padding: 20px;
+}
+.cards {
+  padding: 30px;
+}
+.cards img {
+  margin-bottom: 25px;
+}
+.cards h3 {
+  margin-bottom: 20px;
+}
+.cards p {
+  margin-bottom: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+  .cards p {
+    padding-bottom: 45px;
+  }
+  .orange {
+    border-radius: 10px 0 0 10px;
+  }
+  .dark-cyan {
+    border-radius: 0 10px 10px 0;
+  }
+}
